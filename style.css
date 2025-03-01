@@ -1,0 +1,127 @@
+/* General Styling */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    flex-direction: column; /* Align items vertically */
+    gap: 10px; /* Spacing between elements */
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%; /* Responsive width */
+    max-width: 500px; /* Maximum container width */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333; /* Darker heading color */
+}
+
+/* Question and Answers */
+#question-container {
+    margin-bottom: 20px;
+}
+
+#answer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.answer-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff; /* Primary button color */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.answer-button:hover {
+    background-color: #0056b3;
+}
+
+.answer-button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+/* Feedback */
+#feedback-container {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.feedback-correct {
+    color: #28a745; /* Green for correct */
+}
+
+.feedback-incorrect {
+    color: #dc3545; /* Red for incorrect */
+}
+
+/* Score and High Score */
+#score-container {
+    margin-bottom: 20px;
+}
+
+#score-container p {
+    margin: 5px 0;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: #e9ecef; /* Light gray background */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #007bff; /* Primary color for progress */
+    width: 0%; /* Initial width */
+    transition: width 0.3s ease; /* Smooth transition */
+}
+
+/* Buttons */
+#next-button, #restart-button {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #28a745; /* Green button color */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+#next-button:hover, #restart-button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 90%;
+    }
+
+    #answer-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px;
+    }
+}

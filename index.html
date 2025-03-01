@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Language Learning Quiz</h1>
+        <div id="question-container">
+            <p id="question"></p>
+        </div>
+        <div id="answer-buttons">
+            <button class="answer-button" id="true-btn">True</button>
+            <button class="answer-button" id="false-btn">False</button>
+        </div>
+        <div id="feedback-container">
+            <p id="feedback"></p>
+            <p id="explanation"></p>
+        </div>
+        <div id="score-container">
+            <p>Score: <span id="score">0</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+        </div>
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <button id="next-button">Next Question</button>
+        <button id="restart-button">Restart Quiz</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
