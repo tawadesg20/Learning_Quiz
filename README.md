@@ -17,7 +17,7 @@ This is a True/False quiz that tests your knowledge of language learning concept
 
 ## How to Run
 
-1. **Download the Code:** Download the `LanguageQuiz.zip` file and extract its contents.
+1. **Download the Code:** Download the  file and extract its contents.
 2. **Open `index.html`:** Open the `index.html` file in your web browser.
 3. **Start the Quiz:** Begin answering the questions!
 
